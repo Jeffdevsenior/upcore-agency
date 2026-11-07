@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#090914">
   <meta name="description" content="A UPcore Agency cria experiências digitais, sites e estratégias para empresas que querem crescer.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="UPcore Agency — Tecnologia que impulsiona ideias">
+  <meta property="og:description" content="Sites, sistemas e automações digitais pensados para o próximo passo do seu negócio.">
   <title>UPcore Agency — Sua próxima fase começa no digital</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,8 +24,8 @@
         <span class="brand-mark"><span></span><span></span><span></span></span>
         <span>UP<span>core</span><small>AGENCY</small></span>
       </a>
-      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><i></i><i></i></button>
-      <div class="nav-links">
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-navigation"><i></i><i></i></button>
+      <div class="nav-links" id="primary-navigation">
         <a href="#solucoes">Soluções</a>
         <a href="#metodo">Nosso método</a>
         <a href="#trabalhos">Projetos</a>
@@ -73,10 +77,11 @@
     <section class="section container solutions" id="solucoes">
       <div class="section-heading reveal"><div><div class="eyebrow">01 — O QUE FAZEMOS</div><h2>O digital precisa<br>trabalhar <span class="gradient-text">por você.</span></h2></div><p>Mais do que colocar sua empresa na internet: construímos ferramentas e experiências para aproximar sua marca das pessoas.</p></div>
       <div class="service-grid">
-        <article class="service-card reveal"><div class="service-number">01</div><div class="service-icon">⌘</div><h3>Sites profissionais</h3><p>Sites modernos, responsivos e alinhados à identidade da sua empresa para transmitir confiança desde o primeiro clique.</p><a href="#contato" class="card-link">Quero um site <span>↗</span></a></article>
-        <article class="service-card featured reveal"><div class="service-number">02</div><div class="service-icon">↗</div><h3>Landing pages</h3><p>Páginas objetivas, pensadas para apresentar uma oferta, destacar diferenciais e incentivar o contato.</p><a href="#contato" class="card-link">Quero uma landing page <span>↗</span></a></article>
-        <article class="service-card reveal"><div class="service-number">03</div><div class="service-icon">◎</div><h3>Marketing & performance</h3><p>Estrutura e presença digital para campanhas, divulgação e futuras estratégias de aquisição de clientes.</p><a href="#contato" class="card-link">Quero divulgar meu negócio <span>↗</span></a></article>
-        <article class="service-card reveal"><div class="service-number">04</div><div class="service-icon">✳</div><h3>Automação & IA</h3><p>Ideias com tecnologia para simplificar tarefas, organizar processos e melhorar a experiência do cliente.</p><a href="#contato" class="card-link">Quero automatizar <span>↗</span></a></article>
+        <article class="service-card reveal"><div class="service-number">01</div><div class="service-icon">⌘</div><h3>Desenvolvimento web</h3><p>Sites rápidos, responsivos e alinhados à identidade da sua empresa para transmitir confiança desde o primeiro clique.</p><a href="#contato" class="card-link">Quero um site <span>↗</span></a></article>
+        <article class="service-card featured reveal"><div class="service-number">02</div><div class="service-icon">↗</div><h3>Landing pages</h3><p>Páginas objetivas para apresentar sua oferta, destacar diferenciais e transformar visitas em conversas.</p><a href="#contato" class="card-link">Quero uma landing page <span>↗</span></a></article>
+        <article class="service-card reveal"><div class="service-number">03</div><div class="service-icon">▦</div><h3>Sistemas sob medida</h3><p>Plataformas e ferramentas digitais criadas para organizar informações e atender às necessidades da sua operação.</p><a href="#contato" class="card-link">Quero criar um sistema <span>↗</span></a></article>
+        <article class="service-card reveal"><div class="service-number">04</div><div class="service-icon">⟳</div><h3>Automações</h3><p>Conectamos tarefas e fluxos para reduzir trabalho repetitivo e deixar processos mais simples.</p><a href="#contato" class="card-link">Quero automatizar <span>↗</span></a></article>
+        <article class="service-card reveal"><div class="service-number">05</div><div class="service-icon">✳</div><h3>Inteligência artificial</h3><p>Recursos de IA aplicados a experiências e processos, com foco no problema real que sua empresa precisa resolver.</p><a href="#contato" class="card-link">Quero explorar IA <span>↗</span></a></article>
       </div>
     </section>
 
@@ -110,16 +115,17 @@
       <div class="contact-panel reveal"><div class="contact-orb"></div><div class="eyebrow">05 — SEU PRÓXIMO PASSO</div><h2>Vamos fazer sua<br>marca <span class="gradient-text">acontecer?</span></h2><p>Conte um pouco sobre sua empresa ou sua ideia. Vamos entender o que você precisa e pensar no melhor caminho.</p>
         <form id="contact-form">
           <div class="form-row"><label>Seu nome<input type="text" id="name" placeholder="Como podemos te chamar?" required></label><label>Nome da empresa<input type="text" id="company" placeholder="Sua empresa (opcional)"></label></div>
-          <label>O que você procura?<select id="service" required><option value="" disabled selected>Selecione uma solução</option><option>Site profissional</option><option>Landing page</option><option>Marketing e tráfego pago</option><option>Automação e inteligência artificial</option><option>Quero conversar sobre uma ideia</option></select></label>
+          <label>O que você procura?<select id="service" required><option value="" disabled selected>Selecione uma solução</option><option>Desenvolvimento web</option><option>Landing page</option><option>Sistema sob medida</option><option>Automação</option><option>Inteligência artificial</option><option>Quero conversar sobre uma ideia</option></select></label>
           <label>Conte um pouco sobre seu projeto<textarea id="message" rows="3" placeholder="O que você gostaria de criar ou melhorar?"></textarea></label>
           <button class="button button-primary form-submit" type="submit">Conversar pelo WhatsApp <span>↗</span></button>
           <small class="form-privacy">Ao enviar, você será direcionado ao WhatsApp para continuar a conversa.</small>
         </form>
+        <div class="contact-direct"><span>Prefere escrever por e-mail?</span> <a href="mailto:isacpereira0924@gmail.com">isacpereira0924@gmail.com <span aria-hidden="true">↗</span></a></div>
       </div>
     </section>
   </main>
 
-  <footer class="footer"><div class="container footer-top"><a class="brand" href="#top"><span class="brand-mark"><span></span><span></span><span></span></span><span>UP<span>core</span><small>AGENCY</small></span></a><p>Tecnologia que impulsiona<br>novas possibilidades.</p><a href="#top" class="back-top">VOLTAR AO TOPO ↑</a></div><div class="container footer-bottom"><span>© <span id="year"></span> UPcore Agency. Todos os direitos reservados.</span><span>FEITO COM INTENÇÃO. FEITO PARA EVOLUIR.</span></div></footer>
+  <footer class="footer"><div class="container footer-top"><a class="brand" href="#top"><span class="brand-mark"><span></span><span></span><span></span></span><span>UP<span>core</span><small>AGENCY</small></span></a><p>Tecnologia que impulsiona<br>novas possibilidades.</p><div class="footer-links"><a href="https://wa.me/5511954484764" target="_blank" rel="noopener noreferrer">WhatsApp <span aria-hidden="true">↗</span></a><a href="mailto:isacpereira0924@gmail.com">E-mail <span aria-hidden="true">↗</span></a><a href="#top" class="back-top">VOLTAR AO TOPO ↑</a></div></div><div class="container footer-bottom"><span>© <span id="year"></span> UPcore Agency. Todos os direitos reservados.</span><span>FEITO COM INTENÇÃO. FEITO PARA EVOLUIR.</span></div></footer>
   <script src="js/script.js"></script>
 </body>
 </html>

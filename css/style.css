@@ -10,3 +10,18 @@
 @media(max-width:950px){.nav-links{gap:18px}.hero{grid-template-columns:1fr 1fr}.hero h1{font-size:58px}.service-grid{grid-template-columns:repeat(2,1fr)}.service-card{min-height:270px}.card-a{right:-5px}.card-b{left:-5px}}
 @media(max-width:700px){.container{width:min(100% - 36px,560px)}.section{padding:78px 0}.header{height:72px}.menu-toggle{display:flex;flex-direction:column;gap:6px;padding:10px}.menu-toggle i{width:23px;height:2px;background:#eee;border-radius:3px}.nav-links{display:none;position:absolute;top:72px;left:0;right:0;padding:22px 25px 27px;background:#10101f;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:20px}.nav-links.open{display:flex}.nav-cta{text-align:center}.hero{display:flex;flex-direction:column;align-items:stretch;padding-top:72px;padding-bottom:90px;min-height:auto}.hero h1{font-size:clamp(46px,12vw,65px);letter-spacing:-3px}.hero-description{font-size:14px}.hero-actions{flex-wrap:wrap;gap:19px}.hero-proof{margin-top:35px}.hero-visual{height:370px;margin-top:38px}.dashboard{height:290px;transform:none}.dash-content{padding:30px 25px}.dash-title{font-size:34px}.orbit-one{width:340px;height:190px}.orbit-two{width:320px;height:250px}.card-a{right:-3px;top:35px}.card-b{left:-3px;bottom:25px}.floating-card{padding:9px 10px}.floating-card b{font-size:9px}.hero-bottom{bottom:25px}.ticker{padding:15px 0}.section-heading{display:block;margin-bottom:32px}.section-heading h2,.about-copy h2{font-size:42px}.section-heading>p{margin-top:18px}.service-grid{grid-template-columns:1fr}.service-card{min-height:250px}.step{grid-template-columns:42px 1fr 20px;padding:22px 0}.step p{max-width:290px;line-height:1.6}.work-grid{grid-template-columns:1fr;gap:25px}.mockup{height:280px}.about-wrap{grid-template-columns:1fr;gap:40px;padding:75px 0}.about-symbol{height:260px}.symbol-ring{width:230px;height:230px}.symbol-core{width:140px;height:140px}.symbol-core span{font-size:80px}.about-symbol small{bottom:-5px}.contact-section{padding-top:75px;padding-bottom:75px}.contact-panel{padding:36px 23px}.contact-panel h2{font-size:44px}.form-row{grid-template-columns:1fr;gap:0}.footer-top{gap:20px;flex-wrap:wrap}.footer-top>p{order:3;width:100%}.footer-bottom{gap:12px;flex-direction:column}.footer-bottom span:last-child{display:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+
+/* Refinamentos da identidade Upcore */
+.service-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.service-card{min-height:275px}
+.service-card:nth-child(4),.service-card:nth-child(5){background:linear-gradient(150deg,#131323,#0d0d19)}
+.contact-direct{position:relative;margin-top:30px;padding-top:20px;border-top:1px solid var(--line);font-size:11px;color:#9996ad}
+.contact-direct a{display:inline-flex;gap:8px;margin-left:8px;color:#c6b5ff}
+.contact-direct a:hover,.footer-links a:hover{color:#fff}
+.footer-links{display:flex;align-items:center;gap:24px;font-size:10px;color:#aaa6bd}
+.footer-links a span{color:#a995ff}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid #b7a1ff;outline-offset:4px}
+.menu-toggle{cursor:pointer}
+.menu-toggle:hover i{background:#b7a1ff}
+@media(max-width:950px){.service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.service-card{min-height:260px}.footer-links{gap:16px}}
+@media(max-width:700px){.service-grid{grid-template-columns:1fr}.service-card{min-height:245px}.contact-direct{line-height:1.8}.contact-direct a{display:flex;margin:4px 0 0}.footer-links{width:100%;order:4;flex-wrap:wrap}.footer-links .back-top{margin-left:auto}}
